@@ -47,7 +47,7 @@ h1,h2,h3,h4,h5,h6{
     line-height: 1.19;
     letter-spacing: 0.03em;
     color:#000;
-    margin-right: 42px;
+    margin-right: 93px;
 }
 
 .header{
@@ -237,7 +237,9 @@ h1,h2,h3,h4,h5,h6{
 
 .team{
     background-color: var(--bg-grey-color);
-
+}
+.team__item{
+    background-color: var(--bg-white-color);
 }
 .team__title{
     font-family: inherit;
@@ -248,6 +250,7 @@ h1,h2,h3,h4,h5,h6{
     letter-spacing: 0.03em;
     font-family: inherit;
     color: inherit;
+    margin-bottom: 50px;
 }
 .team__subtitle{
     font-family: inherit;
@@ -258,6 +261,7 @@ h1,h2,h3,h4,h5,h6{
     letter-spacing: 0.03em;
     font-family: inherit;
     color: inherit;
+    margin: 30px 0 10px;
 }
 .team__position{
     font-family: inherit;
