@@ -13,6 +13,7 @@ body{
     background-color: var(--bg-white-color);
     font-family: 'Roboto', sans-serif;
     color: var(--black-color);
+    margin:0;
 }
 ul{
     list-style-type: none;
@@ -56,7 +57,6 @@ p{
     line-height: 1.19;
     letter-spacing: 0.03em;
     color:#000;
-    margin-right: 93px;
 }
 
 .header{
@@ -71,6 +71,10 @@ p{
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.header__nav-lists{
+    margin-left:93px;
 }
 .header-container{
     display: flex; 
@@ -171,7 +175,6 @@ p{
 }
 
 .footer__item{
-
     margin-bottom: 9px;
 }
 
@@ -193,9 +196,6 @@ p{
     text-transform: uppercase;
     color: var(--white-color);
     margin-bottom: 30px;
-    width: 696px;
-    margin-left: auto;
-    margin-right: auto;
     letter-spacing: 0.06em;
 }
 
@@ -283,7 +283,11 @@ p{
     letter-spacing: 0.03em;
     font-family: inherit;
     color: inherit;
-    margin: 30px 0 10px;
+    margin-bottom: 10px;
+}
+
+.team__info{
+    padding:30px 0;
 }
 .team__position{
     font-family: inherit;
@@ -297,6 +301,12 @@ p{
 /* styles index / end */
 
 /* styles portfolio / start */
+.portfolio__buttons-item{
+    margin-right: 8px;
+}
+.portfolio__buttons-item:last-child{
+    margin-right: 0;
+}
 .portfolio__button-link{
     font-family: inherit;
     font-weight: 500;
@@ -310,6 +320,7 @@ p{
     cursor: pointer;
     color: inherit;
 }
+
 
 .portfolio__title{
     font-family: inherit;
@@ -340,18 +351,11 @@ p{
     margin-bottom: 50px;
 }
 
-.portfolio__buttons-item:not(:last-child){
-    margin-right: 8px;
-}
 .portfolio__gallery-item{
-    margin-bottom: 30px;
+    /* margin: 15px; */
     border: 1px solid #EEEEEE;
 }
 
-
-.portfolio__gallery-item:nth-child(n+7){
-    margin-bottom: 0;
-}
 
 
 .portfolio__button-link{
@@ -370,7 +374,8 @@ p{
 
 .portfolio__gallery{
     display: flex;
-    justify-content: space-between;
+    gap:30px;
+    /* margin: -15px; */
     flex-wrap: wrap;
 }
 
